@@ -1,0 +1,32 @@
+$black: #111;
+$green: #4caf50;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+
+@mixin about-parameters {
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.article__header-about {
+  background-color: $green;
+  color: $black;
+  font-size: xx-large;
+  text-align: left;
+  width: 60%;
+  padding-left: 15px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: $small) {
+  .article__header-about {
+    @include about-parameters;
+  }
+}
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+  .article__header-about {
+    @include about-parameters;
+  }
+}

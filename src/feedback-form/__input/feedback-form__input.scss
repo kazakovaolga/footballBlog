@@ -1,0 +1,13 @@
+$grey: #bdbdbd;
+$white: #fff;
+$black: #111;
+
+.feedback-form__input {
+  width: 20rem;
+  height: 2rem;
+  color: $black;
+  background-color: $white;
+  border-color: $grey;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem $grey;
+}

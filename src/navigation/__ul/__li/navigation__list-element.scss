@@ -1,0 +1,25 @@
+$white: #fff;
+$black: #111;
+$green: #4caf50;
+
+.navigation__list-element {
+  float: left;
+
+  a {
+    display: block;
+    color: $white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      &:not(.navigation__list-element-active) {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.navigation__list-element-active {
+  background-color: $green;
+}

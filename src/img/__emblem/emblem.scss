@@ -1,0 +1,13 @@
+$small: 576px;
+
+.emblem {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: $small) {
+  .emblem {
+    padding-left: 20%;
+    padding-top: 3%;
+  }
+}

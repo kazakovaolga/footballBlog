@@ -1,0 +1,35 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+
+@mixin flex-box-parameters {
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.footer {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+  .footer {
+    @include flex-box-parameters;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .footer {
+    @include flex-box-parameters;
+  }
+}
+
+@media screen and (min-width: $medium) and (max-width: $large) {
+  .footer {
+    gap: 80px;
+  }
+}
