@@ -24,8 +24,8 @@
           <a href="./slider.html">Наши фото</a>
         </li>
       </ul>
-    </nav>    
-    <ul class="slider">      
+    </nav>
+    <ul class="slider">
       <li class="slider__item">
         <img src="../assets/foto1.jpg" />
       </li>
@@ -41,15 +41,15 @@
       <a class="previous">&#10094;</a>
       <a class="next">&#10095;</a>
     </ul>
-    <script>     
-        const element = document.querySelector('.slider')
-        const sliderItem = new Slider(element)     
-        document.querySelector('.previous').addEventListener('click', () => {
-            sliderItem.previous();
-        })
-        document.querySelector('.next').addEventListener('click', () => {
-            sliderItem.next();
-        })
-      </script>
+    <script>
+      const element = document.querySelector(".slider");
+      const sliderItem = new Slider(element);
+      document.querySelector(".previous").addEventListener("click", () => {
+        sliderItem.previous();
+      });
+      document.querySelector(".next").addEventListener("click", () => {
+        sliderItem.next();
+      });
+    </script>
   </body>
 </html>
