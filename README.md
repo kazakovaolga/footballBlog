@@ -18,7 +18,7 @@ An website-blog with 4 pages implemented in javascript as part of the OTUS JavaS
 
 - Create a blog site with at least 4 pages (home, feedback, list of entries, entry page) using a preprocessor
 - Using DRY principles for layout
-- Use the BEM methodology 
+- Use the BEM methodology
 - Create a new repository
 - Set up linters in it, github actions
 - Enable linter verification during PR
@@ -26,4 +26,3 @@ An website-blog with 4 pages implemented in javascript as part of the OTUS JavaS
 - Deployment of pages to the github pages
 - Service create a pull request with changes and
 - Reset the link to the PR and the link to the backplayed pages per hour with the teacher
-
