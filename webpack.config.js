@@ -5,10 +5,10 @@ const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const { resolve } = require("path");
 
 module.exports = {
-  entry: { mane: "./src/index.js" },
+  entry: { bundle: "./src/index.js", slider: "./src/slider/slider.js" },
   output: {
     path: resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].js",
     clean: true,
     environment: {
       arrowFunction: false,
@@ -36,6 +36,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "studentInfo.html",
       template: "public/studentInfo.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "slider.html",
+      template: "public/slider.html",
     }),
     new BrowserSyncPlugin(
       {
