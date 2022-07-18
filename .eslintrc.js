@@ -20,6 +20,6 @@ module.exports = {
       },
     ],
     "import/extensions": [0, { js: "always" }],
-    "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "no-unused-vars": ["off", { argsIgnorePattern: "^_" }],
   },
 };
