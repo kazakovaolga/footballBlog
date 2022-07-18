@@ -1,11 +1,13 @@
 let slideIndex = 1;
 
 function Slider(el) {
+  console.log("slider el=", el);
   if (!(el instanceof HTMLElement)) {
     console.log("Container is not DOM element");
     return;
   }
   showSlides(el, slideIndex);
+  console.log("this=", this);
 
   this.previous = () => {
     showSlides(el, (slideIndex -= 1));
@@ -32,3 +34,5 @@ function showSlides(el, n) {
 
   slides[slideIndex - 1].style.display = "block";
 }
+
+export { Slider };

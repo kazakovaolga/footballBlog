@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Slider</title>
-    <script src="../src/slider/slider.js"></script>
   </head>
 
   <body>
@@ -41,15 +40,5 @@
       <a class="previous">&#10094;</a>
       <a class="next">&#10095;</a>
     </ul>
-    <script>
-      const element = document.querySelector(".slider");
-      const sliderItem = new Slider(element);
-      document.querySelector(".previous").addEventListener("click", () => {
-        sliderItem.previous();
-      });
-      document.querySelector(".next").addEventListener("click", () => {
-        sliderItem.next();
-      });
-    </script>
   </body>
 </html>
